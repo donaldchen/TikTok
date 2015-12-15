@@ -8,12 +8,53 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TikTok_Watch_App" customModuleProvider="target">
+                <controller contentMode="scaleAspectFit" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TikTok_Watch_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="TikTok Yay!" id="5Il-Wg-N1L"/>
+                        <group width="1" alignment="left" id="kwa-aw-4v7">
+                            <items>
+                                <button width="40" height="40" alignment="left" backgroundImage="play_button.png" id="t2I-aV-tQ9">
+                                    <connections>
+                                        <action selector="playPauseTouched" destination="AgC-eL-Hgc" id="o1U-Ek-2Ix"/>
+                                    </connections>
+                                </button>
+                                <label alignment="right" verticalAlignment="center" text="BPM:" textAlignment="right" id="HHQ-qf-fpH">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <picker width="46" height="40" alignment="right" verticalAlignment="center" id="jcu-cw-t0H">
+                                    <connections>
+                                        <action selector="pickerSelectedItemChanged:" destination="AgC-eL-Hgc" id="wUt-G2-tpN"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="1"/>
+                        </group>
+                        <group width="94" height="94" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="Tbg-jm-DtO">
+                            <items>
+                                <imageView width="94" height="94" alignment="center" verticalAlignment="center" image="pulse_tok_green.png" id="i0u-s2-JPX"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="NHC-iS-gpv">
+                            <items>
+                                <button alignment="center" verticalAlignment="bottom" title="TAP to set BPM" backgroundImage="tap_button_border.png" id="EP8-cD-3IK">
+                                    <color key="titleColor" red="0.30779870164298617" green="1" blue="0.81990089113917475" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    <connections>
+                                        <action selector="tapTouched" destination="AgC-eL-Hgc" id="pYz-fU-zl2"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="4"/>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="bpmPicker" destination="jcu-cw-t0H" id="g9J-CL-68Q"/>
+                        <outlet property="playPauseButton" destination="t2I-aV-tQ9" id="MUX-Oy-JcT"/>
+                        <outlet property="pulseImage" destination="i0u-s2-JPX" id="ObX-NN-tda"/>
+                        <outlet property="tapButton" destination="EP8-cD-3IK" id="nal-F5-OSq"/>
+                    </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="431" y="482"/>
         </scene>
     </scenes>
 </document>
