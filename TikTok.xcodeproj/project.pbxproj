@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4007F86A1C24BE68007DFB98 /* pause_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8601C24BE68007DFB98 /* pause_button@2x.png */; };
+		4007F86C1C24BE68007DFB98 /* play_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8621C24BE68007DFB98 /* play_button@2x.png */; };
+		4007F8831C252136007DFB98 /* tap_button_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8821C252136007DFB98 /* tap_button_border@2x.png */; };
+		4007F8881C25355E007DFB98 /* pulse_aquaman_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8841C25355E007DFB98 /* pulse_aquaman_blue@2x.png */; };
+		4007F8891C25355E007DFB98 /* pulse_gogenta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8851C25355E007DFB98 /* pulse_gogenta@2x.png */; };
+		4007F88A1C25355E007DFB98 /* pulse_hound_orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8861C25355E007DFB98 /* pulse_hound_orange@2x.png */; };
+		4007F88B1C25355E007DFB98 /* pulse_tok_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8871C25355E007DFB98 /* pulse_tok_green@2x.png */; };
 		40207E171C1F98090065E438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40207E161C1F98090065E438 /* AppDelegate.swift */; };
 		40207E191C1F98090065E438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40207E181C1F98090065E438 /* ViewController.swift */; };
 		40207E1C1C1F98090065E438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40207E1A1C1F98090065E438 /* Main.storyboard */; };
@@ -80,6 +87,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4007F8601C24BE68007DFB98 /* pause_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause_button@2x.png"; sourceTree = "<group>"; };
+		4007F8621C24BE68007DFB98 /* play_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play_button@2x.png"; sourceTree = "<group>"; };
+		4007F8821C252136007DFB98 /* tap_button_border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap_button_border@2x.png"; sourceTree = "<group>"; };
+		4007F8841C25355E007DFB98 /* pulse_aquaman_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse_aquaman_blue@2x.png"; sourceTree = "<group>"; };
+		4007F8851C25355E007DFB98 /* pulse_gogenta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse_gogenta@2x.png"; sourceTree = "<group>"; };
+		4007F8861C25355E007DFB98 /* pulse_hound_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse_hound_orange@2x.png"; sourceTree = "<group>"; };
+		4007F8871C25355E007DFB98 /* pulse_tok_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse_tok_green@2x.png"; sourceTree = "<group>"; };
 		40207E131C1F98090065E438 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40207E161C1F98090065E438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40207E181C1F98090065E438 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +209,13 @@
 			isa = PBXGroup;
 			children = (
 				40207E481C1F995E0065E438 /* Interface.storyboard */,
+				4007F8821C252136007DFB98 /* tap_button_border@2x.png */,
+				4007F8601C24BE68007DFB98 /* pause_button@2x.png */,
+				4007F8621C24BE68007DFB98 /* play_button@2x.png */,
+				4007F8841C25355E007DFB98 /* pulse_aquaman_blue@2x.png */,
+				4007F8851C25355E007DFB98 /* pulse_gogenta@2x.png */,
+				4007F8861C25355E007DFB98 /* pulse_hound_orange@2x.png */,
+				4007F8871C25355E007DFB98 /* pulse_tok_green@2x.png */,
 				40207E4B1C1F995E0065E438 /* Assets.xcassets */,
 				40207E4D1C1F995E0065E438 /* Info.plist */,
 			);
@@ -387,7 +408,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4007F86A1C24BE68007DFB98 /* pause_button@2x.png in Resources */,
+				4007F88B1C25355E007DFB98 /* pulse_tok_green@2x.png in Resources */,
+				4007F8881C25355E007DFB98 /* pulse_aquaman_blue@2x.png in Resources */,
 				40207E4C1C1F995E0065E438 /* Assets.xcassets in Resources */,
+				4007F86C1C24BE68007DFB98 /* play_button@2x.png in Resources */,
+				4007F88A1C25355E007DFB98 /* pulse_hound_orange@2x.png in Resources */,
+				4007F8891C25355E007DFB98 /* pulse_gogenta@2x.png in Resources */,
+				4007F8831C252136007DFB98 /* tap_button_border@2x.png in Resources */,
 				40207E4A1C1F995E0065E438 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,6 +758,7 @@
 				40207E3D1C1F98090065E438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40207E3E1C1F98090065E438 /* Build configuration list for PBXNativeTarget "TikTokTests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +767,7 @@
 				40207E401C1F98090065E438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40207E411C1F98090065E438 /* Build configuration list for PBXNativeTarget "TikTokUITests" */ = {
 			isa = XCConfigurationList;
@@ -746,6 +776,7 @@
 				40207E431C1F98090065E438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40207E611C1F995E0065E438 /* Build configuration list for PBXNativeTarget "TikTok Watch App Extension" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +785,7 @@
 				40207E631C1F995E0065E438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40207E651C1F995E0065E438 /* Build configuration list for PBXNativeTarget "TikTok Watch App" */ = {
 			isa = XCConfigurationList;
@@ -762,6 +794,7 @@
 				40207E671C1F995E0065E438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
