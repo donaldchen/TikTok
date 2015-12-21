@@ -29,20 +29,18 @@ class InterfaceController: WKInterfaceController {
     let timeout = 2.000
     var previousTime = 0.000
     var tapTimes: [Double] = []
+    var tapBeats: [Double] = []
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        print("print works!")
-        
         // Configure interface objects here.
-        
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         initBpmPicker()
-        setGlowingRate(initialBpm)
+        setGlowingRateFromBpm(initialBpm)
     }
     
     func initBpmPicker() {
@@ -80,28 +78,32 @@ class InterfaceController: WKInterfaceController {
         let currentTime = NSDate().timeIntervalSince1970
         if currentTime - previousTime > timeout {
             tapTimes.removeAll()
+            tapBeats.removeAll()
         }
         tapTimes.append(currentTime)
+        tapBeats.append(Double(tapBeats.count))
         previousTime = currentTime
+
         
         if tapTimes.count > 1 {
-            var last = tapTimes.removeAtIndex(0)
-            var differences: [Double] = []
-            for tapTime in tapTimes {
-                differences.append(tapTime - last)
-                last = tapTime
-            }
-            var sum = 0.0
+            // uses simple linear regression to calculate the time per beat and then the BPM
+            let avgTapTime = tapTimes.reduce(0){$0 + $1} / Double(tapTimes.count)
+            let avgNumTaps = tapBeats.reduce(0){$0 + $1} / Double(tapBeats.count)
             
-            for difference in differences {
-                sum += difference
+            
+            var numerator: Double = 0.0
+            var denominator: Double = 0.0
+            
+            for i in 1...tapTimes.count - 1 {
+                numerator += (tapBeats[i] - avgNumTaps) * (tapTimes[i] - avgTapTime)
+                denominator += (tapBeats[i] - avgNumTaps) * (tapBeats[i] - avgNumTaps)
             }
-            let average = sum / Double(differences.count)
-            let bpm = normalizeBpm(Int(60.0 / average))
-            setGlowingRate(Int(bpm))
+            
+            let secondsPerBeat = numerator / denominator
+            let bpm = normalizeBpm(Int(60.0 / secondsPerBeat))
+            setGlowingRateFromBpm(bpm)
             bpmPicker.setSelectedItemIndex(numbers.indexOf(String(bpm))!)
         }
-        
     }
     
     @IBAction func setGreenPulse() {
@@ -153,14 +155,13 @@ class InterfaceController: WKInterfaceController {
         })
     }
     
-    func setGlowingRate(bpm: Int) {
+    func setGlowingRateFromBpm(bpm: Int) {
         animationTime = 1.0 / Double(bpm) * 60 * 0.5
     }
     
     @IBAction func pickerSelectedItemChanged(value: Int) {
         let bpm = Int(numbers[value])
-        print(numbers[value])
-        setGlowingRate(bpm!)
+        setGlowingRateFromBpm(bpm!)
     }
     
 

@@ -39,7 +39,7 @@
                                     <color key="titleColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                     <connections>
-                                        <action selector="tapTouched" destination="AgC-eL-Hgc" id="pYz-fU-zl2"/>
+                                        <action selector="tapTouched" destination="AgC-eL-Hgc" id="FL5-oG-Dgi"/>
                                     </connections>
                                 </button>
                             </items>
