@@ -52,6 +52,7 @@ class InterfaceController: WKInterfaceController {
         let pickerItems: [WKPickerItem] = numbers.map {
             let pickerItem = WKPickerItem()
             pickerItem.title = $0
+            pickerItem.caption = "BPM"
             return pickerItem
         }
         bpmPicker.setItems(pickerItems)
@@ -101,6 +102,22 @@ class InterfaceController: WKInterfaceController {
             bpmPicker.setSelectedItemIndex(numbers.indexOf(String(bpm))!)
         }
         
+    }
+    
+    @IBAction func setGreenPulse() {
+        pulseImage.setImageNamed("pulse_tok_green")
+    }
+    
+    @IBAction func setBluePulse() {
+        pulseImage.setImageNamed("pulse_aquaman_blue")
+    }
+    
+    @IBAction func setRosePulse() {
+        pulseImage.setImageNamed("pulse_gogenta")
+    }
+    
+    @IBAction func setOrangePulse() {
+        pulseImage.setImageNamed("pulse_hound_orange")
     }
     
     func normalizeBpm(bpm: Int) -> Int {

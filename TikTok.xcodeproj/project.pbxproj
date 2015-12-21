@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4007F86A1C24BE68007DFB98 /* pause_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8601C24BE68007DFB98 /* pause_button@2x.png */; };
 		4007F86C1C24BE68007DFB98 /* play_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8621C24BE68007DFB98 /* play_button@2x.png */; };
-		4007F8831C252136007DFB98 /* tap_button_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8821C252136007DFB98 /* tap_button_border@2x.png */; };
 		4007F8881C25355E007DFB98 /* pulse_aquaman_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8841C25355E007DFB98 /* pulse_aquaman_blue@2x.png */; };
 		4007F8891C25355E007DFB98 /* pulse_gogenta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8851C25355E007DFB98 /* pulse_gogenta@2x.png */; };
 		4007F88A1C25355E007DFB98 /* pulse_hound_orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4007F8861C25355E007DFB98 /* pulse_hound_orange@2x.png */; };
@@ -28,6 +27,11 @@
 		40207E5A1C1F995E0065E438 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40207E591C1F995E0065E438 /* ExtensionDelegate.swift */; };
 		40207E5C1C1F995E0065E438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40207E5B1C1F995E0065E438 /* Assets.xcassets */; };
 		40207E601C1F995E0065E438 /* TikTok Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40207E461C1F995E0065E438 /* TikTok Watch App.app */; };
+		40FE25751C27A3980089186B /* g_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25741C27A3980089186B /* g_button@2x.png */; };
+		40FE25791C27A4470089186B /* b_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25761C27A4470089186B /* b_button@2x.png */; };
+		40FE257A1C27A4470089186B /* o_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25771C27A4470089186B /* o_button@2x.png */; };
+		40FE257B1C27A4470089186B /* r_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25781C27A4470089186B /* r_button@2x.png */; };
+		40FE257D1C27B3CF0089186B /* tap_button_border_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE257C1C27B3CF0089186B /* tap_button_border_gray@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +93,6 @@
 /* Begin PBXFileReference section */
 		4007F8601C24BE68007DFB98 /* pause_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause_button@2x.png"; sourceTree = "<group>"; };
 		4007F8621C24BE68007DFB98 /* play_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play_button@2x.png"; sourceTree = "<group>"; };
-		4007F8821C252136007DFB98 /* tap_button_border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap_button_border@2x.png"; sourceTree = "<group>"; };
 		4007F8841C25355E007DFB98 /* pulse_aquaman_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse_aquaman_blue@2x.png"; sourceTree = "<group>"; };
 		4007F8851C25355E007DFB98 /* pulse_gogenta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse_gogenta@2x.png"; sourceTree = "<group>"; };
 		4007F8861C25355E007DFB98 /* pulse_hound_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse_hound_orange@2x.png"; sourceTree = "<group>"; };
@@ -116,6 +119,11 @@
 		40207E591C1F995E0065E438 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		40207E5B1C1F995E0065E438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40207E5D1C1F995E0065E438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40FE25741C27A3980089186B /* g_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g_button@2x.png"; sourceTree = "<group>"; };
+		40FE25761C27A4470089186B /* b_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_button@2x.png"; sourceTree = "<group>"; };
+		40FE25771C27A4470089186B /* o_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "o_button@2x.png"; sourceTree = "<group>"; };
+		40FE25781C27A4470089186B /* r_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "r_button@2x.png"; sourceTree = "<group>"; };
+		40FE257C1C27B3CF0089186B /* tap_button_border_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap_button_border_gray@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,13 +217,17 @@
 			isa = PBXGroup;
 			children = (
 				40207E481C1F995E0065E438 /* Interface.storyboard */,
-				4007F8821C252136007DFB98 /* tap_button_border@2x.png */,
+				40FE257C1C27B3CF0089186B /* tap_button_border_gray@2x.png */,
 				4007F8601C24BE68007DFB98 /* pause_button@2x.png */,
 				4007F8621C24BE68007DFB98 /* play_button@2x.png */,
 				4007F8841C25355E007DFB98 /* pulse_aquaman_blue@2x.png */,
 				4007F8851C25355E007DFB98 /* pulse_gogenta@2x.png */,
 				4007F8861C25355E007DFB98 /* pulse_hound_orange@2x.png */,
 				4007F8871C25355E007DFB98 /* pulse_tok_green@2x.png */,
+				40FE25741C27A3980089186B /* g_button@2x.png */,
+				40FE25761C27A4470089186B /* b_button@2x.png */,
+				40FE25771C27A4470089186B /* o_button@2x.png */,
+				40FE25781C27A4470089186B /* r_button@2x.png */,
 				40207E4B1C1F995E0065E438 /* Assets.xcassets */,
 				40207E4D1C1F995E0065E438 /* Info.plist */,
 			);
@@ -415,7 +427,11 @@
 				4007F86C1C24BE68007DFB98 /* play_button@2x.png in Resources */,
 				4007F88A1C25355E007DFB98 /* pulse_hound_orange@2x.png in Resources */,
 				4007F8891C25355E007DFB98 /* pulse_gogenta@2x.png in Resources */,
-				4007F8831C252136007DFB98 /* tap_button_border@2x.png in Resources */,
+				40FE257B1C27A4470089186B /* r_button@2x.png in Resources */,
+				40FE257D1C27B3CF0089186B /* tap_button_border_gray@2x.png in Resources */,
+				40FE25751C27A3980089186B /* g_button@2x.png in Resources */,
+				40FE25791C27A4470089186B /* b_button@2x.png in Resources */,
+				40FE257A1C27A4470089186B /* o_button@2x.png in Resources */,
 				40207E4A1C1F995E0065E438 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

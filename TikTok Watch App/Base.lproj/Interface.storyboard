@@ -17,10 +17,10 @@
                                         <action selector="playPauseTouched" destination="AgC-eL-Hgc" id="o1U-Ek-2Ix"/>
                                     </connections>
                                 </button>
-                                <label alignment="right" verticalAlignment="center" text="BPM:" textAlignment="right" id="HHQ-qf-fpH">
-                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                <label alignment="right" verticalAlignment="center" textAlignment="right" id="HHQ-qf-fpH">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                 </label>
-                                <picker width="46" height="40" alignment="right" verticalAlignment="center" id="jcu-cw-t0H">
+                                <picker width="62" height="40" alignment="right" verticalAlignment="center" focusStyle="sequence" id="jcu-cw-t0H">
                                     <connections>
                                         <action selector="pickerSelectedItemChanged:" destination="AgC-eL-Hgc" id="wUt-G2-tpN"/>
                                     </connections>
@@ -30,14 +30,14 @@
                         </group>
                         <group width="94" height="94" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="Tbg-jm-DtO">
                             <items>
-                                <imageView width="94" height="94" alignment="center" verticalAlignment="center" image="pulse_tok_green.png" id="i0u-s2-JPX"/>
+                                <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="pulse_tok_green.png" id="i0u-s2-JPX"/>
                             </items>
                         </group>
                         <group width="1" alignment="center" verticalAlignment="bottom" id="NHC-iS-gpv">
                             <items>
-                                <button alignment="center" verticalAlignment="bottom" title="TAP to set BPM" backgroundImage="tap_button_border.png" id="EP8-cD-3IK">
-                                    <color key="titleColor" red="0.30779870164298617" green="1" blue="0.81990089113917475" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                <button alignment="center" verticalAlignment="bottom" title="TAP to set BPM" backgroundImage="tap_button_border_gray.png" id="EP8-cD-3IK">
+                                    <color key="titleColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                     <connections>
                                         <action selector="tapTouched" destination="AgC-eL-Hgc" id="pYz-fU-zl2"/>
                                     </connections>
@@ -46,6 +46,30 @@
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="4"/>
                         </group>
                     </items>
+                    <menu key="menu" id="ta3-61-1Op">
+                        <items>
+                            <menuItem title="Green" image="g_button.png" id="iDj-MN-pXW">
+                                <connections>
+                                    <action selector="setGreenPulse" destination="AgC-eL-Hgc" id="FPU-XV-yAQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Blue" image="b_button.png" id="qA8-4Y-wqr">
+                                <connections>
+                                    <action selector="setBluePulse" destination="AgC-eL-Hgc" id="6By-iV-PUB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Rose" image="r_button.png" id="RwK-oe-oas">
+                                <connections>
+                                    <action selector="setRosePulse" destination="AgC-eL-Hgc" id="Fbk-2Q-Q6I"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Orange" image="o_button.png" id="A6A-pN-J0p">
+                                <connections>
+                                    <action selector="setOrangePulse" destination="AgC-eL-Hgc" id="zss-wA-F5e"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="bpmPicker" destination="jcu-cw-t0H" id="g9J-CL-68Q"/>
                         <outlet property="playPauseButton" destination="t2I-aV-tQ9" id="MUX-Oy-JcT"/>
