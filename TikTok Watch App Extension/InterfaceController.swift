@@ -14,16 +14,21 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var playPauseButton: WKInterfaceButton!
     @IBOutlet weak var tapButton: WKInterfaceButton!
     @IBOutlet weak var bpmPicker: WKInterfacePicker!
+    @IBOutlet weak var pulseGroup: WKInterfaceGroup!
     
     let maxBpm = 200
     let minBpm = 30
-    let pulseWidth: CGFloat = 100.0
-    let pulseHeight: CGFloat = 100.0
+    var pulseWidth: CGFloat = 94.0
+    var pulseHeight: CGFloat = 94.0
     let initialBpm: Int = 120
     var playing: Bool = false
     var completedLastAnimation: Bool = true
     var numbers: [String] = []
     var animationTime: Double = 0.25
+    let bounds = WKInterfaceDevice.currentDevice().screenBounds
+    let smallScreenWidth: CGFloat = 136.0
+    // 38mm: (0.0, 0.0, 136.0, 170.0)
+    // 42mm: (0.0, 0.0, 156.0, 195.0)
     
     //tap BPM variables
     let timeout = 2.000
@@ -34,13 +39,28 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         // Configure interface objects here.
+        initBpmPicker()
+        setGlowingRateFromBpm(initialBpm)
+        initPulse()
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        initBpmPicker()
-        setGlowingRateFromBpm(initialBpm)
+    }
+    
+    func initPulse() {
+        if self.bounds.width > self.smallScreenWidth {
+            pulseWidth = 94.0
+            pulseHeight = 94.0
+        } else {
+            pulseWidth = 76.0
+            pulseHeight = 76.0
+        }
+        pulseImage.setWidth(pulseWidth)
+        pulseImage.setHeight(pulseHeight)
+        pulseGroup.setWidth(pulseWidth)
+        pulseGroup.setHeight(pulseHeight)
     }
     
     func initBpmPicker() {
@@ -55,6 +75,7 @@ class InterfaceController: WKInterfaceController {
         }
         bpmPicker.setItems(pickerItems)
         bpmPicker.setSelectedItemIndex(numbers.indexOf(String(initialBpm))!)
+        bpmPicker.focus()
     }
 
     override func didDeactivate() {

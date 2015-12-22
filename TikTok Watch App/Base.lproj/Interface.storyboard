@@ -26,11 +26,11 @@
                                     </connections>
                                 </picker>
                             </items>
-                            <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="1"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
-                        <group width="94" height="94" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="Tbg-jm-DtO">
+                        <group width="76" height="76" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="Tbg-jm-DtO">
                             <items>
-                                <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="pulse_tok_green.png" id="i0u-s2-JPX"/>
+                                <imageView alignment="center" verticalAlignment="center" image="pulse_tok_green.png" id="i0u-s2-JPX"/>
                             </items>
                         </group>
                         <group width="1" alignment="center" verticalAlignment="bottom" id="NHC-iS-gpv">
@@ -43,7 +43,7 @@
                                     </connections>
                                 </button>
                             </items>
-                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="4"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
                     </items>
                     <menu key="menu" id="ta3-61-1Op">
@@ -73,6 +73,7 @@
                     <connections>
                         <outlet property="bpmPicker" destination="jcu-cw-t0H" id="g9J-CL-68Q"/>
                         <outlet property="playPauseButton" destination="t2I-aV-tQ9" id="MUX-Oy-JcT"/>
+                        <outlet property="pulseGroup" destination="Tbg-jm-DtO" id="sYh-tW-741"/>
                         <outlet property="pulseImage" destination="i0u-s2-JPX" id="ObX-NN-tda"/>
                         <outlet property="tapButton" destination="EP8-cD-3IK" id="nal-F5-OSq"/>
                     </connections>
