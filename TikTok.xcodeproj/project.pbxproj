@@ -21,12 +21,12 @@
 		40207E2C1C1F98090065E438 /* TikTokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40207E2B1C1F98090065E438 /* TikTokTests.swift */; };
 		40207E371C1F98090065E438 /* TikTokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40207E361C1F98090065E438 /* TikTokUITests.swift */; };
 		40207E4A1C1F995E0065E438 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40207E481C1F995E0065E438 /* Interface.storyboard */; };
-		40207E4C1C1F995E0065E438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40207E4B1C1F995E0065E438 /* Assets.xcassets */; };
 		40207E531C1F995E0065E438 /* TikTok Watch App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 40207E521C1F995E0065E438 /* TikTok Watch App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40207E581C1F995E0065E438 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40207E571C1F995E0065E438 /* InterfaceController.swift */; };
 		40207E5A1C1F995E0065E438 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40207E591C1F995E0065E438 /* ExtensionDelegate.swift */; };
 		40207E5C1C1F995E0065E438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40207E5B1C1F995E0065E438 /* Assets.xcassets */; };
 		40207E601C1F995E0065E438 /* TikTok Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40207E461C1F995E0065E438 /* TikTok Watch App.app */; };
+		40C9DC911C2A260300493094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C9DC901C2A260300493094 /* Assets.xcassets */; };
 		40FE25751C27A3980089186B /* g_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25741C27A3980089186B /* g_button@2x.png */; };
 		40FE25791C27A4470089186B /* b_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25761C27A4470089186B /* b_button@2x.png */; };
 		40FE257A1C27A4470089186B /* o_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25771C27A4470089186B /* o_button@2x.png */; };
@@ -112,13 +112,13 @@
 		40207E381C1F98090065E438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40207E461C1F995E0065E438 /* TikTok Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TikTok Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40207E491C1F995E0065E438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		40207E4B1C1F995E0065E438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40207E4D1C1F995E0065E438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40207E521C1F995E0065E438 /* TikTok Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TikTok Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40207E571C1F995E0065E438 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		40207E591C1F995E0065E438 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		40207E5B1C1F995E0065E438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40207E5D1C1F995E0065E438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C9DC901C2A260300493094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40FE25741C27A3980089186B /* g_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g_button@2x.png"; sourceTree = "<group>"; };
 		40FE25761C27A4470089186B /* b_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_button@2x.png"; sourceTree = "<group>"; };
 		40FE25771C27A4470089186B /* o_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "o_button@2x.png"; sourceTree = "<group>"; };
@@ -216,6 +216,7 @@
 		40207E471C1F995E0065E438 /* TikTok Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				40C9DC901C2A260300493094 /* Assets.xcassets */,
 				40207E481C1F995E0065E438 /* Interface.storyboard */,
 				40FE257C1C27B3CF0089186B /* tap_button_border_gray@2x.png */,
 				4007F8601C24BE68007DFB98 /* pause_button@2x.png */,
@@ -228,7 +229,6 @@
 				40FE25761C27A4470089186B /* b_button@2x.png */,
 				40FE25771C27A4470089186B /* o_button@2x.png */,
 				40FE25781C27A4470089186B /* r_button@2x.png */,
-				40207E4B1C1F995E0065E438 /* Assets.xcassets */,
 				40207E4D1C1F995E0065E438 /* Info.plist */,
 			);
 			path = "TikTok Watch App";
@@ -423,10 +423,10 @@
 				4007F86A1C24BE68007DFB98 /* pause_button@2x.png in Resources */,
 				4007F88B1C25355E007DFB98 /* pulse_tok_green@2x.png in Resources */,
 				4007F8881C25355E007DFB98 /* pulse_aquaman_blue@2x.png in Resources */,
-				40207E4C1C1F995E0065E438 /* Assets.xcassets in Resources */,
 				4007F86C1C24BE68007DFB98 /* play_button@2x.png in Resources */,
 				4007F88A1C25355E007DFB98 /* pulse_hound_orange@2x.png in Resources */,
 				4007F8891C25355E007DFB98 /* pulse_gogenta@2x.png in Resources */,
+				40C9DC911C2A260300493094 /* Assets.xcassets in Resources */,
 				40FE257B1C27A4470089186B /* r_button@2x.png in Resources */,
 				40FE257D1C27B3CF0089186B /* tap_button_border_gray@2x.png in Resources */,
 				40FE25751C27A3980089186B /* g_button@2x.png in Resources */,
@@ -694,28 +694,36 @@
 		40207E621C1F995E0065E438 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TikTok Watch App Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megaukulele.TikTok.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		40207E631C1F995E0065E438 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "TikTok Watch App Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megaukulele.TikTok.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -725,15 +733,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = TikTok_Watch_App_Extension;
 				INFOPLIST_FILE = "TikTok Watch App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megaukulele.TikTok.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -743,15 +753,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = TikTok_Watch_App_Extension;
 				INFOPLIST_FILE = "TikTok Watch App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megaukulele.TikTok.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};

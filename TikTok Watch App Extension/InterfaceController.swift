@@ -25,10 +25,12 @@ class InterfaceController: WKInterfaceController {
     var completedLastAnimation: Bool = true
     var numbers: [String] = []
     var animationTime: Double = 0.25
+    var keepTappingPromptTime: Double = 3.0
     let bounds = WKInterfaceDevice.currentDevice().screenBounds
     let smallScreenWidth: CGFloat = 136.0
     // 38mm: (0.0, 0.0, 136.0, 170.0)
     // 42mm: (0.0, 0.0, 156.0, 195.0)
+    let timeAdjustment: Double = 0.015
     
     //tap BPM variables
     let timeout = 2.000
@@ -105,7 +107,6 @@ class InterfaceController: WKInterfaceController {
         tapBeats.append(Double(tapBeats.count))
         previousTime = currentTime
 
-        
         if tapTimes.count > 1 {
             // uses simple linear regression to calculate the time per beat and then the BPM
             let avgTapTime = tapTimes.reduce(0){$0 + $1} / Double(tapTimes.count)
@@ -125,6 +126,15 @@ class InterfaceController: WKInterfaceController {
             setGlowingRateFromBpm(bpm)
             bpmPicker.setSelectedItemIndex(numbers.indexOf(String(bpm))!)
         }
+        
+        // temporarily changes the prompt from "Tap to Set BPM" to "Keep Tapping"
+        if tapBeats.count < 2 {
+            animateWithDuration(keepTappingPromptTime, animations: {
+                self.tapButton.setTitle("Keep Tapping")
+                }, completion: {(finished: Bool) -> Void in
+                    self.tapButton.setTitle("Tap to Set BPM")
+            })
+        }
     }
     
     @IBAction func setGreenPulse() {
@@ -141,6 +151,12 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func setOrangePulse() {
         pulseImage.setImageNamed("pulse_hound_orange")
+    }
+    
+    
+    @IBAction func pickerSelectedItemChanged(value: Int) {
+        let bpm = Int(numbers[value])
+        setGlowingRateFromBpm(bpm!)
     }
     
     func normalizeBpm(bpm: Int) -> Int {
@@ -177,15 +193,8 @@ class InterfaceController: WKInterfaceController {
     }
     
     func setGlowingRateFromBpm(bpm: Int) {
-        animationTime = 1.0 / Double(bpm) * 60 * 0.5
+        animationTime = 1.0 / Double(bpm) * 60 * 0.5 - timeAdjustment
     }
-    
-    @IBAction func pickerSelectedItemChanged(value: Int) {
-        let bpm = Int(numbers[value])
-        setGlowingRateFromBpm(bpm!)
-    }
-    
-
     
 }
 

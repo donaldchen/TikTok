@@ -35,7 +35,7 @@
                         </group>
                         <group width="1" alignment="center" verticalAlignment="bottom" id="NHC-iS-gpv">
                             <items>
-                                <button alignment="center" verticalAlignment="bottom" title="TAP to set BPM" backgroundImage="tap_button_border_gray.png" id="EP8-cD-3IK">
+                                <button alignment="center" verticalAlignment="bottom" title="Tap to set BPM" backgroundImage="tap_button_border_gray.png" id="EP8-cD-3IK">
                                     <color key="titleColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                     <connections>
