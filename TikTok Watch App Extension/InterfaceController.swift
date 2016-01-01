@@ -43,12 +43,23 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
         initBpmPicker()
         setGlowingRateFromBpm(initialBpm)
-        initPulse()
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        initPlayPauseButton()
+        initPulse()
+    }
+    
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+        
+        // turn off vibration when screen is off
+        if playing {
+            playing = false
+        }
     }
     
     func initPulse() {
@@ -65,6 +76,10 @@ class InterfaceController: WKInterfaceController {
         pulseGroup.setHeight(pulseHeight)
     }
     
+    func initPlayPauseButton() {
+        playPauseButton.setBackgroundImageNamed("play_button")
+    }
+    
     func initBpmPicker() {
         for bpm in minBpm...maxBpm {
             numbers.append(String(bpm))
@@ -78,11 +93,6 @@ class InterfaceController: WKInterfaceController {
         bpmPicker.setItems(pickerItems)
         bpmPicker.setSelectedItemIndex(numbers.indexOf(String(initialBpm))!)
         bpmPicker.focus()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
     }
     
     @IBAction func playPauseTouched() {
