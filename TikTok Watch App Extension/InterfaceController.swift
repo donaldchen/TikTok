@@ -38,6 +38,8 @@ class InterfaceController: WKInterfaceController {
     var tapTimes: [Double] = []
     var tapBeats: [Double] = []
     
+    @IBOutlet var metTimer: dispatch_source_t!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         // Configure interface objects here.
@@ -100,11 +102,23 @@ class InterfaceController: WKInterfaceController {
         if playing {
             playPauseButton.setBackgroundImageNamed("pause_button")
             if completedLastAnimation {
-                shrink()
+//                shrink()
+                print("timer created")
+                createDispatchTimer(UInt64(0.5 * Double(NSEC_PER_SEC)),
+                    leeway: 0 * NSEC_PER_SEC,
+                    queue: dispatch_get_main_queue(),
+                    block: {() -> () in self.tap()})
+                
             }
         } else {
+            dispatch_source_cancel(self.metTimer)
             playPauseButton.setBackgroundImageNamed("play_button")
         }
+    }
+    
+    func tap() {
+        WKInterfaceDevice.currentDevice().playHaptic(.Click)
+        print("tap")
     }
     
     @IBAction func tapTouched() {
@@ -204,6 +218,18 @@ class InterfaceController: WKInterfaceController {
     
     func setGlowingRateFromBpm(bpm: Int) {
         animationTime = 1.0 / Double(bpm) * 60 * 0.5 - timeAdjustment
+    }
+    
+    func createDispatchTimer(interval: UInt64, leeway: UInt64, queue: dispatch_queue_t, block: dispatch_block_t){
+        
+        self.metTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
+        
+//        dispatch_source_set_timer(self.metTimer, dispatch_time(DISPATCH_TIME_NOW, 0), interval, leeway)
+        dispatch_source_set_timer(self.metTimer, dispatch_walltime(nil, 0), interval, leeway)
+        dispatch_source_set_event_handler(self.metTimer, block)
+        dispatch_resume(self.metTimer)
+        
+//        return timer
     }
     
 }
