@@ -182,8 +182,8 @@ class InterfaceController: WKInterfaceController {
     func shrink() {
         if playing {
             animateWithDuration(animationTime, animations: {
-                self.pulseImage.setHeight(20.0)
-                self.pulseImage.setWidth(20.0)
+                self.pulseImage.setHeight(30.0)
+                self.pulseImage.setWidth(30.0)
                 WKInterfaceDevice.currentDevice().playHaptic(.Click)
                 }, completion: {(finished: Bool) -> Void in
                     self.completedLastAnimation = false
