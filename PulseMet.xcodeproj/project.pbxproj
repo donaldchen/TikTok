@@ -27,6 +27,7 @@
 		40207E5C1C1F995E0065E438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40207E5B1C1F995E0065E438 /* Assets.xcassets */; };
 		40207E601C1F995E0065E438 /* TikTok Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40207E461C1F995E0065E438 /* TikTok Watch App.app */; };
 		40C9DC911C2A260300493094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C9DC901C2A260300493094 /* Assets.xcassets */; };
+		40CFB5FA1C793D8800F89DCF /* TikTok on Watch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CFB5F91C793D8800F89DCF /* TikTok on Watch@2x.png */; };
 		40FE25751C27A3980089186B /* g_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25741C27A3980089186B /* g_button@2x.png */; };
 		40FE25791C27A4470089186B /* b_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25761C27A4470089186B /* b_button@2x.png */; };
 		40FE257A1C27A4470089186B /* o_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE25771C27A4470089186B /* o_button@2x.png */; };
@@ -119,6 +120,7 @@
 		40207E5B1C1F995E0065E438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40207E5D1C1F995E0065E438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C9DC901C2A260300493094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40CFB5F91C793D8800F89DCF /* TikTok on Watch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TikTok on Watch@2x.png"; path = "../../Documents/Sketch Files/TikTok Images/TikTok on Watch@2x.png"; sourceTree = "<group>"; };
 		40FE25741C27A3980089186B /* g_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g_button@2x.png"; sourceTree = "<group>"; };
 		40FE25761C27A4470089186B /* b_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_button@2x.png"; sourceTree = "<group>"; };
 		40FE25771C27A4470089186B /* o_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "o_button@2x.png"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				40207E181C1F98090065E438 /* ViewController.swift */,
 				40207E1A1C1F98090065E438 /* Main.storyboard */,
 				40207E1D1C1F98090065E438 /* Assets.xcassets */,
+				40CFB5F91C793D8800F89DCF /* TikTok on Watch@2x.png */,
 				40207E1F1C1F98090065E438 /* LaunchScreen.storyboard */,
 				40207E221C1F98090065E438 /* Info.plist */,
 			);
@@ -369,7 +372,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40207E0E1C1F98090065E438 /* Build configuration list for PBXProject "TikTok" */;
+			buildConfigurationList = 40207E0E1C1F98090065E438 /* Build configuration list for PBXProject "PulseMet" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -399,6 +402,7 @@
 				40207E211C1F98090065E438 /* LaunchScreen.storyboard in Resources */,
 				40207E1E1C1F98090065E438 /* Assets.xcassets in Resources */,
 				40207E1C1C1F98090065E438 /* Main.storyboard in Resources */,
+				40CFB5FA1C793D8800F89DCF /* TikTok on Watch@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,13 +623,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Donald Chen (L4GWEG84NK)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TikTok/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megaukulele.TikTok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "82b67b80-89a0-4214-a04a-54de5714a387";
 			};
 			name = Debug;
 		};
@@ -633,13 +637,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Donald Chen (L4GWEG84NK)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TikTok/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.megaukulele.TikTok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "82b67b80-89a0-4214-a04a-54de5714a387";
 			};
 			name = Release;
 		};
@@ -770,7 +774,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40207E0E1C1F98090065E438 /* Build configuration list for PBXProject "TikTok" */ = {
+		40207E0E1C1F98090065E438 /* Build configuration list for PBXProject "PulseMet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40207E391C1F98090065E438 /* Debug */,
